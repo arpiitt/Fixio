@@ -1,0 +1,301 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: rgba(41, 41, 41, 1);
+  font-size: 110%;
+  padding: 0 30px;
+  background: #ffffff; /* first-color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.dark-blue {
+  color: #146c94;
+}
+
+.light-blue {
+  color: #19a7ce;
+}
+
+/* ------------------------------------------------------------- / / NAV */
+
+.nav {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 2px solid #ffffff; /* second-color */
+}
+
+.nav * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-title {
+  margin-right: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.nav-left {
+  flex: 50%;
+  text-align: left;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: right;
+}
+
+.nav-right a {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------- / / LANDING */
+
+.landing {
+  text-align: center;
+  margin-top: 20vh;
+  min-height: 50vh;
+  background: #ffffff; /* third-color */
+}
+
+.landing-buttons-container a {
+  margin-top: 70px;
+}
+
+.register-button {
+  margin-right: 50px;
+}
+
+.register-button:hover {
+  color: white;
+  background: #ffffff; /* fourth-color */
+}
+
+/* ---------------------------------------------------------- / / REGISTER */
+
+.register-page {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.register-form {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff; /* first-color */
+}
+
+/* ----------------------------------------------------- / / LOGIN */
+
+.login-page {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.login-form {
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff; /* second-color */
+}
+
+/* ----------------------------------------------------- / / ADD POST */
+
+.add-post-page {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.add-post-form {
+  width: 50%;
+  margin: auto;
+}
+
+.add-tag-container * {
+  vertical-align: middle;
+}
+
+/* --------------------------------------------------------- / / POST PREVIEW */
+
+.post-preview {
+  padding: 30px;
+  border-top: 2px solid #414141; /* second-color */
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  transition: 0.2s;
+  background: #ffffff; /* third-color */
+}
+
+.post-preview-link,.post-preview-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-preview:hover {
+  color: inherit;
+  background-color: #a4b5f508;
+  transition: 0.2s;
+}
+
+.post-preview-title {
+  font-weight: 900;
+}
+
+.post-preview-author {
+  font-size: smaller;
+  display: inline-block;
+  font-style: italic;
+}
+
+.post-preview-date {
+  font-size: smaller;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.post-preview-content {
+  font-size: 85%;
+  font-weight: bold;
+}
+
+.post-preview-tags {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-preview-tags li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 80%;
+  font-style: italic;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.likes,.commentsCount {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* ---------------------------------------------------- / / POSTS LIST */
+
+.posts-list {
+  width: 60%;
+  margin-top: 50px;
+}
+
+/* --------------------------------------------------------- / / POST */
+
+.post-page {
+  display: flex;
+}
+
+.post {
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  transition: 0.2s;
+  flex: 60%;
+  display: inline-block;
+  margin-right: 20px;
+  background: #ffffff; /* first-color */
+}
+
+.post-title {
+  font-weight: 900;
+}
+
+.post-author {
+  font-size: smaller;
+  display: inline-block;
+  font-style: italic;
+}
+
+.post-date {
+  font-size: smaller;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.post-content {
+  font-size: 100%;
+  line-height: 32px;
+}
+
+.post-tags {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-tags li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 80%;
+  font-style: italic;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px;
+  border-radius: 20%;
+}
+
+.like-button:hover {
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------------------------------ / / Comments */
+
+.comments-container {
+  flex: 32%;
+  vertical-align: top;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 60px;
+  max-width: 32%;
+  background: #ffffff; /* third-color */
+}
+
+.comments-list {
+  border: 2px solid #ffffff; /* second-color */
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.comment-text {
+  margin-left: 20px;
+  font-size: 90%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.comment-date {
+  font-size: 70%;
+  margin-left: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: -10px;
+}
+
+.add-comment-container {
+  margin-top: 10px;
+}
+
+.add-comment-input {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------------ / / FOOTER */
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+  width: 98%;
+  margin-top: 100px;
+  background: #ffffff; /* fourth-color */
+}
